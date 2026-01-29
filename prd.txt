@@ -1,0 +1,137 @@
+Você é um especialista sênior em CRO (Conversion Rate Optimization), UX e copywriting para páginas de alta conversão.
+
+Crie uma landing page completa para captação de novas REVENDEDORAS da marca “Roma Joias” (semijoias premium).
+
+OBJETIVO PRINCIPAL Converter visitantes em:
+
+Lead qualificado (WhatsApp)
+Ou diretamente em cadastro com compra do kit inicial via carrinho (seleção premium de peças)
+MODELO DE NEGÓCIO (OBRIGATÓRIO DEIXAR CLARO)
+
+NÃO trabalhamos com consignado
+Revendedora compra o kit inicial
+Sem mensalidade
+Sem taxa escondida
+Recompra apenas quando quiser
+
+PÚBLICO
+
+Mulheres buscando renda extra
+Empreendedoras iniciantes
+Vendedoras autônomas
+Microinfluencers
+
+TOM
+
+Profissional
+Claro
+Direto
+Confiável
+Motivador
+Sem promessas irreais
+
+ESTRUTURA DA PÁGINA
+
+HERO SECTION (primeira dobra)
+Headline forte orientada a benefício
+Subheadline explicando o modelo (compra e revenda)
+2 CTAs: [Quero ser revendedora] [Quero ver os kits iniciais]
+Exemplo de direção: “Transforme joias premium em renda extra com uma marca estruturada.”
+
+COMO FUNCIONA (3 passos)
+Escolhe o kit inicial
+Recebe as joias
+Revende com lucro
+Inserir claramente: “Modelo sem consignado. Você monta seu próprio estoque.”
+
+POR QUE ROMA JOIAS
+Qualidade do banho
+Durabilidade
+Variedade
+Marca consolidada
+Lojas físicas
+Comunidade de revendedoras
+Treinamento incluso
+COMPARATIVO VISUAL
+Tabela simples:
+
+Roma Joias | Outras marcas Sem consignado | Consignado confuso Margem clara | Margem apertada Sem mensalidade | Taxas ocultas Recompra livre | Metas forçadas
+
+KITS INICIAIS
+Exibir 3 opções:
+
+Kit Start Kit Pro Kit Elite
+
+Para cada um:
+
+Quantidade de peças
+Indicação de perfil
+Benefícios
+Botão: “Começar com este kit”
+Observação obrigatória: “Você escolhe seu estoque inicial. Vendendo parte dele, recupera o investimento e segue com lucro.”
+
+(sem prometer valores)
+
+FLUXO PARA CARRINHO (IMPORTANTE)
+Ao clicar em um kit:
+
+Direcionar para página/carrinho com: “Seleção Premium Roma Joias – Kit Inicial”
+Conteúdo do carrinho:
+
+Peças pré-selecionadas (mix campeão)
+Valor total do cadastro
+O que está incluso: ✔ Cadastro ✔ Acesso ao grupo ✔ Treinamento ✔ Bônus inicial ✔ Suporte
+Botão: [Finalizar cadastro e compra]
+
+PROVA SOCIAL
+Depoimentos curtos
+Fotos de lojas
+Prints de eventos
+Números (se possível): “Milhares de revendedoras ativas”
+OBJEÇÕES (FAQ)
+Criar bloco com:
+
+Preciso vender muito?
+E se eu não conseguir vender?
+Posso desistir?
+Tem mensalidade?
+Posso comprar quando quiser?
+Tem prazo mínimo?
+Como funciona a entrega?
+Posso escolher as peças depois?
+CTA FINAL FORTE
+“Comece hoje sua jornada como revendedora Roma Joias”
+
+Botões: [Quero ser revendedora] [Ver kits disponíveis]
+
+ELEMENTOS TÉCNICOS
+Página rápida
+Mobile first
+Botão flutuante WhatsApp
+Pixel Meta preparado
+Eventos: ViewContent Lead AddToCart Purchase
+SEO BÁSICO
+Título: “Seja Revendedora de Joias Premium | Roma Joias”
+
+Meta description focada em renda extra e revenda de semijoias.
+
+DESIGN
+Estilo premium
+Cores elegantes
+Visual feminino sofisticado
+Fotos grandes de produto
+Ícones simples
+Layout limpo
+ENTREGA ESPERADA
+
+Estrutura completa da página
+Copy pronta
+Organização das seções
+Fluxo do carrinho explicado
+Sugestão de microcopies
+Versão desktop e mobile
+Importante: Não usar termos como “ganho garantido”, “renda certa” ou similares.
+
+Usar sempre: “potencial de lucro” “modelo testado” “resultado depende da dedicação”
+
+Crie a página completa.

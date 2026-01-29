@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roma Joias - Revenda Semijoias</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                container: {
+                    center: true,
+                    padding: "2rem",
+                    screens: {
+                        "2xl": "1400px",
+                    },
+                },
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        border: "hsl(214.3 31.8% 91.4%)",
+                        input: "hsl(214.3 31.8% 91.4%)",
+                        ring: "#11BCBE",
+                        background: "#F4FBF9", /* Soft Mint/Ice White */
+                        foreground: "hsl(222.2 47.4% 11.2%)",
+                        primary: {
+                            DEFAULT: "#11BCBE", /* Roma Teal */
+                            foreground: "#ffffff",
+                            dark: "#0E9FA1",
+                        },
+                        secondary: {
+                            DEFAULT: "hsl(210 40% 96.1%)",
+                            foreground: "hsl(222.2 47.4% 11.2%)",
+                        },
+                        muted: {
+                            DEFAULT: "hsl(210 40% 96.1%)",
+                            foreground: "hsl(215.4 16.3% 46.9%)",
+                        },
+                        /* Brand Colors */
+                        turquoise: {
+                            DEFAULT: "#11BCBE", /* Roma Teal */
+                            foreground: "#ffffff",
+                        },
+                        coral: {
+                            DEFAULT: "#E66A3C", /* Terracotta */
+                            light: "#FF9A76",
+                            dark: "#CC5525",
+                            foreground: "#ffffff",
+                        },
+                        teal: {
+                            DEFAULT: "#11BCBE",
+                            foreground: "#ffffff",
+                        },
+                        gold: {
+                            DEFAULT: "#FCD34D",
+                            foreground: "#171717",
+                        }
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen bg-background text-foreground font-sans antialiased">
+
+    <!-- HEADER -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-lg border-b border-turquoise/10 transition-all duration-300">
+        <div class="container mx-auto max-w-7xl py-4 px-6">
+            <div class="flex items-center justify-between">
+                <a href="#" class="block hover:opacity-80 transition-opacity">
+                    <!-- Adjusted path to match typical simplified structure or copy logic -->
+                    <img src="img/logo.png" alt="Roma Joias" class="h-10 w-auto md:h-12">
+                </a>
+                <nav class="hidden md:flex items-center gap-10">
+                    <button
+                        class="text-sm font-medium text-gray-600 hover:text-primary transition-colors tracking-wide">Kits
+                        Iniciais</button>
+                    <button
+                        class="text-sm font-medium text-gray-600 hover:text-primary transition-colors tracking-wide">Como
+                        funciona</button>
+                    <button
+                        class="text-sm font-medium text-gray-600 hover:text-primary transition-colors tracking-wide">Dúvidas</button>
+                    <button
+                        class="bg-coral text-white hover:bg-coral-dark text-sm font-semibold py-2.5 px-6 rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                        Quero Revender
+                    </button>
+                </nav>
+                <button class="md:hidden p-2 text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="w-6 h-6">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="relative min-h-[90vh] flex items-center overflow-hidden pt-28 pb-20 lg:pt-32">
+            <!-- Background Elements -->
+            <div
+                class="absolute top-0 right-0 w-[500px] h-[500px] bg-turquoise/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-coral/5 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/4">
+            </div>
+
+            <div class="container mx-auto max-w-7xl w-full relative z-10 px-6">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <!-- Text Content (Shows First on Mobile) -->
+                    <div class="text-center lg:text-left order-1 animate-fade-in">
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8 bg-white border border-turquoise/20 shadow-sm">
+                            <span class="flex h-2 w-2 rounded-full bg-turquoise"></span>
+                            <span class="text-xs md:text-sm font-semibold text-gray-600 tracking-wide uppercase">Alta
+                                joalheria acessível</span>
+                        </div>
+
+                        <h1
+                            class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6 text-gray-900">
+                            Transforme beleza em <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-turquoise via-turquoise to-teal-600">toda
+                                sua renda</span>.
+                        </h1>
+
+                        <p class="text-lg md:text-xl text-gray-500 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                            Revenda semijoias com <strong>15 milésimos de ouro</strong> e tenha até <strong>100% de
+                                lucro</strong>.
+                            Sem chefe, sem horário fixo e com o suporte de uma marca consolidada.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+                            <button
+                                class="group bg-coral hover:bg-coral-dark text-white text-lg font-semibold py-4 px-10 rounded-full shadow-lg hover:shadow-coral/30 shadow-coral/10 transition-all hover:-translate-y-1 flex items-center justify-center gap-3">
+                                Ver Kits Iniciais
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-5 h-5 group-hover:translate-x-1 transition-transform">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </button>
+                            <button
+                                class="group flex items-center justify-center gap-3 py-4 px-8 rounded-full font-medium transition-all text-gray-600 hover:text-turquoise hover:bg-turquoise/5">
+                                <span
+                                    class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm group-hover:border-turquoise/30 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <polygon points="5 3 19 12 5 21 5 3" fill="currentColor"
+                                            class="text-gray-400 group-hover:text-turquoise transition-colors" />
+                                    </svg>
+                                </span>
+                                Como funciona
+                            </button>
+                        </div>
+
+                        <!-- Trust Signals (Moved closer to CTA) -->
+                        <div
+                            class="flex flex-wrap items-center justify-center lg:justify-start gap-x-8 gap-y-4 pt-8 border-t border-gray-100">
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-turquoise">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                                <span class="text-sm font-medium text-gray-600">Garantia vitalícia</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-turquoise">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                </svg>
+                                <span class="text-sm font-medium text-gray-600">Lucro real</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <div class="flex -space-x-2">
+                                    <div class="w-6 h-6 rounded-full bg-gray-200 border-2 border-white"></div>
+                                    <div class="w-6 h-6 rounded-full bg-gray-300 border-2 border-white"></div>
+                                    <div class="w-6 h-6 rounded-full bg-gray-400 border-2 border-white"></div>
+                                </div>
+                                <span class="text-sm font-medium text-gray-600">Junte-se a 7.000+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HERO IMAGE (Dynamic Composition) -->
+                    <!-- Mobile: Shows Second (order-2) -->
+                    <div class="relative order-2 lg:order-2">
+                        <!-- Main Image Frame -->
+                        <div
+                            class="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-turquoise/10 transform transition-transform hover:scale-[1.01] duration-700">
+                            <!-- Gradient Overlay for Text Readability if needed, mostly for aesthetics here -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-tr from-turquoise/20 to-transparent mix-blend-overlay z-10 pointer-events-none">
+                            </div>
+                            <img src="img/joias.png" alt="Semijoias Roma Joias Premium"
+                                class="w-full h-auto object-cover md:max-h-[700px]">
+                        </div>
+
+                        <!-- Floating Card: Stats -->
+                        <div class="absolute -bottom-10 -left-10 z-20 hidden md:block animate-fade-in"
+                            style="animation-delay: 0.3s">
+                            <div
+                                class="bg-white/90 backdrop-blur-xl p-6 rounded-2xl shadow-glass border border-white/50">
+                                <p class="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-1">Peças
+                                    Vendidas Hoje</p>
+                                <div class="flex items-end gap-2">
+                                    <span class="font-serif text-4xl font-bold text-gray-900">842</span>
+                                    <span class="text-sm text-green-500 font-bold mb-1.5 flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="mr-1">
+                                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                                            <polyline points="17 6 23 6 23 12" />
+                                        </svg>
+                                        +12%
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Card: Quality -->
+                        <div class="absolute top-10 -right-5 z-20 hidden md:block animate-fade-in"
+                            style="animation-delay: 0.5s">
+                            <div
+                                class="bg-white/90 backdrop-blur-xl p-4 pr-6 rounded-full shadow-glass border border-white/50 flex items-center gap-3">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-turquoise flex items-center justify-center text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                        <path d="M4 22h16" />
+                                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-serif font-bold text-gray-900 leading-tight">15 Milésimos</p>
+                                    <p class="text-xs text-gray-500">Qualidade Ouro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS SECTION -->
+        <section id="como-funciona" class="py-24 bg-white relative overflow-hidden">
+            <!-- Decor -->
+            <div
+                class="absolute top-1/2 left-0 w-64 h-64 bg-turquoise/5 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2">
+            </div>
+
+            <div class="container mx-auto max-w-7xl px-6 relative z-10">
+                <div class="text-center mb-20">
+                    <span class="text-turquoise font-semibold tracking-wider uppercase text-sm mb-3 block">Simples e
+                        Lucrativo</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">Como lucrar com a Roma</h2>
+                    <div class="h-1.5 w-24 bg-turquoise mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-12 relative">
+                    <!-- Connector Line (Desktop) -->
+                    <div
+                        class="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-turquoise/30 to-transparent border-t-2 border-dashed border-turquoise/30 z-0">
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div class="relative z-10 text-center group">
+                        <div
+                            class="relative w-24 h-24 mx-auto bg-white rounded-full flex items-center justify-center mb-8 shadow-lg shadow-turquoise/10 border border-turquoise/10 group-hover:scale-110 transition-transform duration-500">
+                            <div class="w-12 h-12 text-turquoise">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                    <line x1="8" y1="21" x2="16" y2="21" />
+                                    <line x1="12" y1="17" x2="12" y2="21" />
+                                </svg>
+                            </div>
+                            <div
+                                class="absolute top-0 right-0 w-8 h-8 rounded-full bg-turquoise text-white flex items-center justify-center font-bold font-serif shadow-md transition-transform duration-500 group-hover:scale-110">
+                                1</div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Escolha seu Kit</h3>
+                        <p class="text-gray-500 leading-relaxed max-w-xs mx-auto">
+                            Selecione o kit ideal para seu orçamento. Todos incluem peças best-sellers e material de
+                            apoio completo.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative z-10 text-center group">
+                        <div
+                            class="relative w-24 h-24 mx-auto bg-white rounded-full flex items-center justify-center mb-8 shadow-lg shadow-turquoise/10 border border-turquoise/10 group-hover:scale-110 transition-transform duration-500">
+                            <div class="w-12 h-12 text-turquoise">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                    <line x1="12" y1="22.08" x2="12" y2="12" />
+                                </svg>
+                            </div>
+                            <div
+                                class="absolute top-0 right-0 w-8 h-8 rounded-full bg-turquoise text-white flex items-center justify-center font-bold font-serif shadow-md transition-transform duration-500 group-hover:scale-110">
+                                2</div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Receba em Casa</h3>
+                        <p class="text-gray-500 leading-relaxed max-w-xs mx-auto">
+                            Entregamos rapidinho no seu endereço. Você recebe as joias, mostruário e acesso à nossa
+                            plataforma de treino.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative z-10 text-center group">
+                        <div
+                            class="relative w-24 h-24 mx-auto bg-white rounded-full flex items-center justify-center mb-8 shadow-lg shadow-turquoise/10 border border-turquoise/10 group-hover:scale-110 transition-transform duration-500">
+                            <div class="w-12 h-12 text-turquoise">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="12" y1="1" x2="12" y2="23" />
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                </svg>
+                            </div>
+                            <div
+                                class="absolute top-0 right-0 w-8 h-8 rounded-full bg-turquoise text-white flex items-center justify-center font-bold font-serif shadow-md transition-transform duration-500 group-hover:scale-110">
+                                3</div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Venda e Lucre</h3>
+                        <p class="text-gray-500 leading-relaxed max-w-xs mx-auto">
+                            Ofereça para amigas, família ou online. Com margem de até 100%, você recupera o investimento
+                            num piscar de olhos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALUE PROPOSITION (WHY ROMA) -->
+        <section class="py-24 bg-background relative overflow-hidden">
+            <div class="container mx-auto max-w-7xl px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1">
+                        <span
+                            class="text-turquoise font-semibold tracking-wider uppercase text-sm mb-3 block">Diferenciais
+                            Exclusivos</span>
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+                            Por que nossas revendedoras <br> <span class="text-coral italic">vendem tanto?</span>
+                        </h2>
+
+                        <div class="space-y-8">
+                            <!-- Benefit 1 -->
+                            <div class="flex gap-5 group">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm text-turquoise border border-gray-100 group-hover:bg-turquoise group-hover:text-white transition-colors duration-300 shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                        <path d="M4 22h16" />
+                                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 mb-2">15 Milésimos de Ouro</h4>
+                                    <p class="text-gray-500 leading-relaxed">Não é "banhado", é semijoia de verdade.
+                                        Camada muito superior à concorrência (que usa 3 a 5 milésimos). Não escurece
+                                        fácil, a cliente ama e volta.</p>
+                                </div>
+                            </div>
+
+                            <!-- Benefit 2 -->
+                            <div class="flex gap-5 group">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm text-turquoise border border-gray-100 group-hover:bg-turquoise group-hover:text-white transition-colors duration-300 shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 mb-2">Garantia Vitalícia no Banho</h4>
+                                    <p class="text-gray-500 leading-relaxed">Confiamos tanto na nossa qualidade que
+                                        oferecemos garantia vitalícia no banho e na cravação de zircônias. Argumento de
+                                        venda imbatível.</p>
+                                </div>
+                            </div>
+
+                            <!-- Benefit 3 -->
+                            <div class="flex gap-5 group">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm text-turquoise border border-gray-100 group-hover:bg-turquoise group-hover:text-white transition-colors duration-300 shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 mb-2">Comunidade de Suporte</h4>
+                                    <p class="text-gray-500 leading-relaxed">Você nunca está sozinha. Temos grupos de
+                                        revendedoras, materiais prontos para postar no Instagram e treinamentos
+                                        semanais.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-1 lg:order-2 relative">
+                        <!-- Image Grid/Composition -->
+                        <div class="relative z-10 grid grid-cols-2 gap-4">
+                            <div class="space-y-4 translate-y-8">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-64 bg-gray-200">
+                                    <!-- Placeholder - using generic or reused image logic -->
+                                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=400"
+                                        alt="Joia Detalhe"
+                                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+                                </div>
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-48 bg-gray-200">
+                                    <img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&q=80&w=400"
+                                        alt="Embalagem Roma"
+                                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-48 bg-gray-200">
+                                    <img src="img/mulher.png" alt="Mulher usando joia"
+                                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+                                </div>
+                                <div class="rounded-2xl overflow-hidden shadow-lg h-64 bg-gray-200">
+                                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=400"
+                                        alt="Anéis Ouro"
+                                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Background Blob -->
+                        <div class="absolute inset-0 bg-coral/5 rounded-full blur-[80px] -z-10 scale-110"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPARISON SECTION -->
+        <section class="py-24 bg-white relative">
+            <div class="container mx-auto max-w-5xl px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-6">A diferença Roma Joias</h2>
+                    <div class="h-1.5 w-24 bg-turquoise mx-auto rounded-full"></div>
+                </div>
+
+                <div class="bg-white rounded-[2rem] shadow-xl overflow-hidden border border-gray-200">
+                    <!-- Table Header -->
+                    <div class="grid grid-cols-3">
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center bg-gray-50 border-r border-b border-gray-200 text-gray-500 font-medium text-[10px] md:text-base">
+                            Característica
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center bg-turquoise/10 border-r border-b border-gray-200 text-turquoise font-serif font-bold text-sm md:text-2xl text-center">
+                            Roma Joias
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center bg-gray-50 border-b border-gray-200 text-gray-400 font-medium text-[10px] md:text-base text-center">
+                            Outras marcas
+                        </div>
+                    </div>
+
+                    <!-- Row 1: Modelo de revenda -->
+                    <div class="grid grid-cols-3 group hover:bg-gray-50/50 transition-colors">
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center md:justify-start md:pl-10 text-gray-700 font-medium border-r border-b border-gray-200 text-[10px] md:text-base text-center md:text-left">
+                            Modelo de revenda
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center gap-1 md:gap-3 bg-turquoise/5 border-r border-b border-gray-200 text-gray-800 font-medium text-[10px] md:text-base">
+                            <span
+                                class="flex items-center justify-center w-4 h-4 md:w-6 md:h-6 rounded-full bg-turquoise text-white shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 md:w-4 md:h-4"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span class="text-center">Você compra, é seu</span>
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center gap-1 md:gap-3 text-gray-400 border-b border-gray-200 text-[10px] md:text-base">
+                            <span
+                                class="flex items-center justify-center w-4 h-4 md:w-6 md:h-6 rounded-full bg-red-100 text-red-500 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 md:w-4 md:h-4"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </span>
+                            <span class="text-center">Consignado confuso</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Margem de Lucro -->
+                    <div class="grid grid-cols-3 group hover:bg-gray-50/50 transition-colors">
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center md:justify-start md:pl-10 text-gray-700 font-medium border-r border-b border-gray-200 text-[10px] md:text-base text-center md:text-left">
+                            Margem de lucro
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center gap-1 md:gap-3 bg-turquoise/5 border-r border-b border-gray-200 text-gray-800 font-medium text-[10px] md:text-base">
+                            <span
+                                class="flex items-center justify-center w-4 h-4 md:w-6 md:h-6 rounded-full bg-turquoise text-white shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 md:w-4 md:h-4"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span class="text-center">Clara e definida</span>
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center gap-1 md:gap-3 text-gray-400 border-b border-gray-200 text-[10px] md:text-base">
+                            <span
+                                class="flex items-center justify-center w-4 h-4 md:w-6 md:h-6 rounded-full bg-red-100 text-red-500 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 md:w-4 md:h-4"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </span>
+                            <span class="text-center">Margem apertada</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Mensalidade -->
+                    <div class="grid grid-cols-3 group hover:bg-gray-50/50 transition-colors">
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center md:justify-start md:pl-10 text-gray-700 font-medium border-r border-b border-gray-200 text-[10px] md:text-base text-center md:text-left">
+                            Mensalidade
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center gap-1 md:gap-3 bg-turquoise/5 border-r border-b border-gray-200 text-gray-800 font-medium text-[10px] md:text-base">
+                            <span
+                                class="flex items-center justify-center w-4 h-4 md:w-6 md:h-6 rounded-full bg-turquoise text-white shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 md:w-4 md:h-4"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span class="text-center">Zero taxa mensal</span>
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center gap-1 md:gap-3 text-gray-400 border-b border-gray-200 text-[10px] md:text-base">
+                            <span
+                                class="flex items-center justify-center w-4 h-4 md:w-6 md:h-6 rounded-full bg-red-100 text-red-500 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 md:w-4 md:h-4"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </span>
+                            <span class="text-center">Taxas ocultas</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Recompra -->
+                    <div class="grid grid-cols-3 group hover:bg-gray-50/50 transition-colors">
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center md:justify-start md:pl-10 text-gray-700 font-medium border-r border-b border-gray-200 text-[10px] md:text-base text-center md:text-left">
+                            Recompra
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center gap-1 md:gap-3 bg-turquoise/5 border-r border-b border-gray-200 text-gray-800 font-medium text-[10px] md:text-base">
+                            <span
+                                class="flex items-center justify-center w-4 h-4 md:w-6 md:h-6 rounded-full bg-turquoise text-white shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 md:w-4 md:h-4"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span class="text-center">Quando você quiser</span>
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center gap-1 md:gap-3 text-gray-400 border-b border-gray-200 text-[10px] md:text-base">
+                            <span
+                                class="flex items-center justify-center w-4 h-4 md:w-6 md:h-6 rounded-full bg-red-100 text-red-500 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 md:w-4 md:h-4"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </span>
+                            <span class="text-center">Metas forçadas</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 5: Suporte -->
+                    <div class="grid grid-cols-3 group hover:bg-gray-50/50 transition-colors">
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center md:justify-start md:pl-10 text-gray-700 font-medium border-r border-gray-200 text-[10px] md:text-base text-center md:text-left">
+                            Suporte
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center gap-1 md:gap-3 bg-turquoise/5 border-r border-gray-200 text-gray-800 font-medium text-[10px] md:text-base">
+                            <span
+                                class="flex items-center justify-center w-4 h-4 md:w-6 md:h-6 rounded-full bg-turquoise text-white shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 md:w-4 md:h-4"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <div class="text-center flex flex-col">
+                                <span>Grupo exclusivo +</span>
+                                <span>treinamento</span>
+                            </div>
+                        </div>
+                        <div
+                            class="p-2 md:p-8 flex items-center justify-center gap-1 md:gap-3 text-gray-400 text-[10px] md:text-base">
+                            <span
+                                class="flex items-center justify-center w-4 h-4 md:w-6 md:h-6 rounded-full bg-red-100 text-red-500 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 md:w-4 md:h-4"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </span>
+                            <span class="text-center">Você por conta própria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KITS SECTION -->
+        <section id="kits" class="py-24 bg-gradient-to-b from-white to-background relative">
+            <div
+                class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none">
+            </div>
+
+            <div class="container mx-auto max-w-7xl px-6 relative z-10">
+                <div class="text-center mb-20">
+                    <span class="text-turquoise font-semibold tracking-wider uppercase text-sm mb-3 block">Comece Seu
+                        Negócio</span>
+                    <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">Escolha seu
+                        ponto de partida</h2>
+                    <div class="h-1.5 w-24 bg-turquoise mx-auto rounded-full mb-8"></div>
+                    <p class="text-gray-500 text-xl max-w-2xl mx-auto leading-relaxed">
+                        Não vendemos apenas joias, vendemos margem de lucro. <br>
+                        Invista em produtos validados e multiplique seu capital.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 lg:gap-10 items-start">
+                    <!-- Kit Start -->
+                    <div
+                        class="group relative bg-white rounded-[2rem] border border-gray-100 p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                        <div class="absolute inset-x-0 top-0 h-2 bg-turquoise rounded-t-[2rem]"></div>
+
+                        <div class="mb-6">
+                            <span
+                                class="inline-block py-1 px-3 rounded-full bg-gray-100 text-gray-500 text-xs font-bold tracking-wide uppercase mb-3">Iniciante</span>
+                            <h3 class="font-serif text-3xl font-bold text-gray-900">Kit Start</h3>
+                            <p class="text-gray-400 mt-1">Para experimentar o mercado</p>
+                        </div>
+
+                        <div
+                            class="mb-8 p-6 bg-background rounded-2xl border border-turquoise/10 relative overflow-hidden">
+                            <div class="relative z-10">
+                                <p class="text-sm text-gray-500 mb-1">Seu Investimento</p>
+                                <div class="flex items-baseline gap-1">
+                                    <span class="text-lg font-semibold text-gray-400">R$</span>
+                                    <span class="text-4xl font-bold text-gray-900 tracking-tight">540</span>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-1">à vista no PIX ou 4x R$ 150</p>
+                            </div>
+                            <!-- Decorative Circle -->
+                            <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-turquoise/5 rounded-full"></div>
+                        </div>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center justify-between pb-4 border-b border-gray-50">
+                                <span class="text-gray-600 font-medium">Potencial de Venda</span>
+                                <span class="font-bold text-gray-900">R$ 1.000,00</span>
+                            </div>
+                            <div class="flex items-center justify-between pb-4 border-b border-gray-50">
+                                <span class="text-gray-600 font-medium">Seu Lucro Estimado</span>
+                                <span class="font-bold text-turquoise">+ R$ 460,00</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <div
+                                    class="w-5 h-5 rounded-full bg-turquoise/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-turquoise">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                Mix Best-sellers (os mais vendidos)
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <div
+                                    class="w-5 h-5 rounded-full bg-turquoise/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-turquoise">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                Material de apoio digital
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <div
+                                    class="w-5 h-5 rounded-full bg-turquoise/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-turquoise">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                Acesso ao grupo de revendedoras
+                            </li>
+                        </ul>
+
+                        <button
+                            class="w-full py-4 rounded-xl font-bold bg-white border-2 border-turquoise text-turquoise hover:bg-turquoise hover:text-white transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-turquoise/20">
+                            Escolher Kit Start
+                        </button>
+                    </div>
+
+                    <!-- Kit Pro (Featured) -->
+                    <div
+                        class="relative bg-white rounded-[2rem] p-8 shadow-2xl ring-4 ring-coral/20 transform md:-translate-y-6 z-10">
+                        <div
+                            class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-coral text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg flex items-center gap-2 whitespace-nowrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="currentColor" class="text-white">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                            Recomendado para Lucrar
+                        </div>
+
+                        <div class="mb-6 mt-4">
+                            <span
+                                class="inline-block py-1 px-3 rounded-full bg-coral/10 text-coral text-xs font-bold tracking-wide uppercase mb-3">Profissional</span>
+                            <h3 class="font-serif text-4xl font-bold text-gray-900">Kit Pro</h3>
+                            <p class="text-gray-400 mt-1">O favorito das revendedoras</p>
+                        </div>
+
+                        <div
+                            class="mb-8 p-6 bg-gradient-to-br from-coral/5 to-transparent rounded-2xl border border-coral/10 relative overflow-hidden">
+                            <div class="relative z-10">
+                                <p class="text-sm text-gray-500 mb-1">Seu Investimento</p>
+                                <div class="flex items-baseline gap-1">
+                                    <span class="text-lg font-semibold text-gray-400">R$</span>
+                                    <span class="text-5xl font-bold text-coral tracking-tight">1.080</span>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-1">à vista no PIX ou 4x R$ 300</p>
+                            </div>
+                            <!-- Decorative Circle -->
+                            <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-coral/5 rounded-full blur-xl"></div>
+                        </div>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center justify-between pb-4 border-b border-gray-50">
+                                <span class="text-gray-600 font-medium">Potencial de Venda</span>
+                                <span class="font-bold text-gray-900">R$ 2.000,00</span>
+                            </div>
+                            <div class="flex items-center justify-between pb-4 border-b border-gray-50">
+                                <span class="text-gray-600 font-medium">Seu Lucro Estimado</span>
+                                <span class="font-bold text-coral text-lg">+ R$ 920,00</span>
+                            </div>
+                        </div>
+
+                        <!-- Gift Box -->
+                        <div
+                            class="bg-gradient-to-r from-gray-50 to-white border border-gray-100 p-4 rounded-xl mb-8 flex items-center gap-4 shadow-sm">
+                            <div class="w-12 h-12 bg-coral/10 rounded-full flex items-center justify-center text-2xl">🎁
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-coral uppercase tracking-wide">Bônus Exclusivo</p>
+                                <p class="text-sm font-medium text-gray-700">Ganha Mostruário de Presente</p>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <div
+                                    class="w-5 h-5 rounded-full bg-coral/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-coral">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                <strong>Frete Grátis</strong> para todo Brasil
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <div
+                                    class="w-5 h-5 rounded-full bg-coral/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-coral">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                Maior variedade de modelos
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <div
+                                    class="w-5 h-5 rounded-full bg-coral/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-coral">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                Acesso antecipado a lançamentos
+                            </li>
+                        </ul>
+
+                        <button
+                            class="w-full py-5 rounded-xl font-bold bg-coral text-white hover:bg-coral-dark shadow-lg shadow-coral/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 transform">
+                            QUERO LUCRAR AGORA
+                        </button>
+                        <p class="text-center text-xs text-gray-400 mt-4">Compra 100% Segura e Garantida</p>
+                    </div>
+
+                    <!-- Kit Elite -->
+                    <div
+                        class="group relative bg-white rounded-[2rem] border border-gray-100 p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                        <div class="absolute inset-x-0 top-0 h-2 bg-gray-600 rounded-t-[2rem]"></div>
+
+                        <div class="mb-6">
+                            <span
+                                class="inline-block py-1 px-3 rounded-full bg-gray-100 text-gray-500 text-xs font-bold tracking-wide uppercase mb-3">Expert</span>
+                            <h3 class="font-serif text-3xl font-bold text-gray-900">Kit Elite</h3>
+                            <p class="text-gray-400 mt-1">Para quem pensa grande</p>
+                        </div>
+
+                        <div class="mb-8 p-6 bg-gray-50 rounded-2xl border border-gray-200 relative overflow-hidden">
+                            <div class="relative z-10">
+                                <p class="text-sm text-gray-500 mb-1">Seu Investimento</p>
+                                <div class="flex items-baseline gap-1">
+                                    <span class="text-lg font-semibold text-gray-400">R$</span>
+                                    <span class="text-4xl font-bold text-gray-900 tracking-tight">1.620</span>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-1">à vista no PIX ou 4x R$ 450</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center justify-between pb-4 border-b border-gray-50">
+                                <span class="text-gray-600 font-medium">Potencial de Venda</span>
+                                <span class="font-bold text-gray-900">R$ 3.000,00</span>
+                            </div>
+                            <div class="flex items-center justify-between pb-4 border-b border-gray-50">
+                                <span class="text-gray-600 font-medium">Seu Lucro Estimado</span>
+                                <span class="font-bold text-gray-700">+ R$ 1.380,00</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <div
+                                    class="w-5 h-5 rounded-full bg-gray-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-white">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                <strong>Frete Grátis</strong> + Seguro Total
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <div
+                                    class="w-5 h-5 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-gray-500">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                Maleta Premium Inclusa
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-gray-600">
+                                <div
+                                    class="w-5 h-5 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" class="text-gray-500">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                Mentoria Individual
+                            </li>
+                        </ul>
+
+                        <button
+                            class="w-full py-4 rounded-xl font-bold bg-white border-2 border-gray-300 text-gray-600 hover:border-gray-900 hover:text-gray-900 transition-all duration-300 shadow-sm hover:shadow-lg">
+                            Escolher Kit Elite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="py-24 bg-background relative overflow-hidden">
+            <!-- Decor -->
+            <div
+                class="absolute bottom-0 right-0 w-96 h-96 bg-turquoise/5 rounded-full blur-3xl translate-y-1/2 translate-x-1/2">
+            </div>
+
+            <div class="container mx-auto max-w-7xl px-6 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Quem revende, ama</h2>
+                    <div class="h-1.5 w-24 bg-turquoise mx-auto rounded-full mb-8"></div>
+                    <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+                        Histórias reais de mulheres que transformaram suas vidas com a Roma
+                        Joias.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-lg shadow-gray-200/50 border border-gray-100 relative group hover:-translate-y-2 transition-transform duration-300">
+                        <div
+                            class="absolute -top-4 -right-4 w-12 h-12 bg-coral text-white rounded-full flex items-center justify-center shadow-lg transform rotate-12 group-hover:rotate-0 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor" class="scale-75">
+                                <path
+                                    d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 7.55228 14.017 7V3H19.017C20.6739 3 22.017 4.34315 22.017 6V15C22.017 16.6569 20.6739 18 19.017 18H16.017V21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 7.55228 5.0166 7V3H10.0166C11.6735 3 13.0166 4.34315 13.0166 6V15C13.0166 16.6569 11.6735 18 10.0166 18H7.0166V21H5.0166Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex text-yellow-400 mb-6 gap-1">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-600 mb-8 italic leading-relaxed">"Eu comecei com o
+                            Kit Prata e em menos de 15 dias já tinha vendido tudo! A qualidade
+                            impressiona e as clientes sempre voltam. Hoje é minha renda
+                            principal."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
+                                alt="Mariana Silva"
+                                class="w-14 h-14 rounded-full object-cover border-2 border-turquoise shadow-md" />
+                            <div>
+                                <p class="font-bold text-gray-900 font-serif">Mariana Silva</p>
+                                <p class="text-sm text-turquoise font-medium">Lucrou R$ 2.400 no
+                                    1º mês</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-lg shadow-gray-200/50 border border-gray-100 relative group hover:-translate-y-2 transition-transform duration-300">
+                        <div
+                            class="absolute -top-4 -right-4 w-12 h-12 bg-coral text-white rounded-full flex items-center justify-center shadow-lg transform rotate-12 group-hover:rotate-0 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor" class="scale-75">
+                                <path
+                                    d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 7.55228 14.017 7V3H19.017C20.6739 3 22.017 4.34315 22.017 6V15C22.017 16.6569 20.6739 18 19.017 18H16.017V21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 7.55228 5.0166 7V3H10.0166C11.6735 3 13.0166 4.34315 13.0166 6V15C13.0166 16.6569 11.6735 18 10.0166 18H7.0166V21H5.0166Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex text-yellow-400 mb-6 gap-1">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-600 mb-8 italic leading-relaxed">"O suporte é
+                            incrível. Eu não sabia nada de vendas, mas com o material do grupo e
+                            as dicas, consegui formar minha carteira de clientes rapidamente."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face"
+                                alt="Carla Souza"
+                                class="w-14 h-14 rounded-full object-cover border-2 border-turquoise shadow-md" />
+                            <div>
+                                <p class="font-bold text-gray-900 font-serif">Carla Souza</p>
+                                <p class="text-sm text-turquoise font-medium">Revendedora Elite
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-lg shadow-gray-200/50 border border-gray-100 relative group hover:-translate-y-2 transition-transform duration-300">
+                        <div
+                            class="absolute -top-4 -right-4 w-12 h-12 bg-coral text-white rounded-full flex items-center justify-center shadow-lg transform rotate-12 group-hover:rotate-0 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor" class="scale-75">
+                                <path
+                                    d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 7.55228 14.017 7V3H19.017C20.6739 3 22.017 4.34315 22.017 6V15C22.017 16.6569 20.6739 18 19.017 18H16.017V21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 7.55228 5.0166 7V3H10.0166C11.6735 3 13.0166 4.34315 13.0166 6V15C13.0166 16.6569 11.6735 18 10.0166 18H7.0166V21H5.0166Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex text-yellow-400 mb-6 gap-1">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-600 mb-8 italic leading-relaxed">"O que mais gosto é
+                            a liberdade. Não tem ninguém me cobrando meta. Eu faço meu horário,
+                            vendo quanto quero e o lucro é todo meu. Recomendo muito!"</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face"
+                                alt="Fernanda Lima"
+                                class="w-14 h-14 rounded-full object-cover border-2 border-turquoise shadow-md" />
+                            <div>
+                                <p class="font-bold text-gray-900 font-serif">Fernanda Lima</p>
+                                <p class="text-sm text-turquoise font-medium">Revendedora há 2
+                                    anos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto max-w-4xl px-4">
+                <div class="text-center mb-16">
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6 text-gray-900">
+                        Perguntas frequentes</h2>
+                    <div class="h-1.5 w-24 bg-turquoise mx-auto rounded-full mb-6"></div>
+                    <p class="text-gray-500 text-lg">Tire suas dúvidas e comece sua jornada com
+                        confiança.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <details
+                        class="group bg-white border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-md hover:border-turquoise/30 open:border-turquoise/30 open:shadow-lg open:shadow-turquoise/5">
+                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                            <span
+                                class="font-semibold text-lg text-gray-800 group-hover:text-turquoise transition-colors">Preciso
+                                vender muito para valer a pena?</span>
+                            <span
+                                class="transition-transform group-open:rotate-180 p-2 rounded-full bg-gray-50 group-open:bg-turquoise/10 group-open:text-turquoise">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-transparent group-open:border-gray-50 pt-4">
+                            Não! Com margens de até 100%, você recupera seu investimento
+                            rapidamente vendendo poucas peças. Muitos começam com vendas para
+                            amigos e família e já lucram na primeira semana.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-white border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-md hover:border-turquoise/30 open:border-turquoise/30 open:shadow-lg open:shadow-turquoise/5">
+                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                            <span
+                                class="font-semibold text-lg text-gray-800 group-hover:text-turquoise transition-colors">E
+                                se eu não conseguir vender tudo?</span>
+                            <span
+                                class="transition-transform group-open:rotate-180 p-2 rounded-full bg-gray-50 group-open:bg-turquoise/10 group-open:text-turquoise">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-transparent group-open:border-gray-50 pt-4">
+                            Nossas joias não têm prazo de validade e a moda é atemporal. Você
+                            pode continuar vendendo no seu ritmo sem pressão de metas mensais. O
+                            estoque é seu e valoriza com o tempo.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-white border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-md hover:border-turquoise/30 open:border-turquoise/30 open:shadow-lg open:shadow-turquoise/5">
+                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                            <span
+                                class="font-semibold text-lg text-gray-800 group-hover:text-turquoise transition-colors">É
+                                seguro comprar o Kit?</span>
+                            <span
+                                class="transition-transform group-open:rotate-180 p-2 rounded-full bg-gray-50 group-open:bg-turquoise/10 group-open:text-turquoise">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-transparent group-open:border-gray-50 pt-4">
+                            Totalmente. Somos uma empresa com 30 anos de mercado, mais de 40
+                            lojas físicas e milhares de consultoras. Emitimos nota fiscal e
+                            oferecemos garantia em todas as peças.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-white border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-md hover:border-turquoise/30 open:border-turquoise/30 open:shadow-lg open:shadow-turquoise/5">
+                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                            <span
+                                class="font-semibold text-lg text-gray-800 group-hover:text-turquoise transition-colors">Tem
+                                mensalidade ou taxa extra?</span>
+                            <span
+                                class="transition-transform group-open:rotate-180 p-2 rounded-full bg-gray-50 group-open:bg-turquoise/10 group-open:text-turquoise">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 text-gray-500 leading-relaxed border-t border-transparent group-open:border-gray-50 pt-4">
+                            Zero. Você paga apenas o valor do kit (que pode parcelar) e não
+                            precisa pagar mais nada para a Roma Joias. O lucro da revenda é 100%
+                            seu.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="py-24 bg-gradient-to-br from-[#0B7A7B] to-[#11BCBE] relative overflow-hidden text-white">
+            <!-- Background Patterns -->
+            <div
+                class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none">
+            </div>
+            <div
+                class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/20 to-transparent pointer-events-none">
+            </div>
+
+            <div class="container mx-auto max-w-4xl px-4 relative z-10 text-center">
+                <h2 class="font-serif text-3xl md:text-6xl font-bold mb-6 tracking-tight leading-tight">
+                    Comece hoje sua história de sucesso
+                </h2>
+                <p class="text-xl text-white/90 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+                    Centenas de mulheres já mudaram de vida com a Roma Joias. <br>O próximo caso
+                    de sucesso pode ser você.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
+                    <button
+                        class="bg-coral hover:bg-[#D95D2E] text-white font-bold py-5 px-10 rounded-full shadow-2xl shadow-coral/30 transition-all hover:scale-105 flex items-center gap-3 text-lg group">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 group-hover:animate-bounce"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                        Falar com Consultora
+                    </button>
+                    <button
+                        class="bg-white/10 backdrop-blur-md border border-white/30 text-white hover:bg-white hover:text-turquoise font-semibold py-5 px-10 rounded-full transition-all flex items-center gap-3 text-lg">
+                        Ver Kits Disponíveis
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+                <p class="mt-10 text-sm text-white/60">
+                    Garantia de satisfação • Compra 100% segura • Enviamos para todo Brasil
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-50 border-t border-gray-100 pt-20 pb-10">
+        <div class="container mx-auto max-w-7xl px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <a href="#" class="block mb-6">
+                        <img src="../public/img/logo.png" alt="Roma Joias"
+                            class="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity">
+                    </a>
+                    <p class="text-gray-500 max-w-sm mb-8 leading-relaxed">
+                        Transformando vidas através do empreendedorismo feminino com semijoias de alta qualidade,
+                        garantia vitalícia e suporte completo.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-turquoise hover:border-turquoise hover:text-white transition-all duration-300 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-turquoise hover:border-turquoise hover:text-white transition-all duration-300 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-turquoise hover:border-turquoise hover:text-white transition-all duration-300 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6 font-serif text-lg">Institucional</h4>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="#"
+                                class="hover:text-turquoise transition-colors inline-block hover:translate-x-1 duration-200">Sobre
+                                nós</a></li>
+                        <li><a href="#"
+                                class="hover:text-turquoise transition-colors inline-block hover:translate-x-1 duration-200">Depoimentos</a>
+                        </li>
+                        <li><a href="#"
+                                class="hover:text-turquoise transition-colors inline-block hover:translate-x-1 duration-200">Blog
+                                da Revendedora</a></li>
+                        <li><a href="#"
+                                class="hover:text-turquoise transition-colors inline-block hover:translate-x-1 duration-200">Trabalhe
+                                conosco</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-6 font-serif text-lg">Ajuda</h4>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="#"
+                                class="hover:text-turquoise transition-colors inline-block hover:translate-x-1 duration-200">Central
+                                de ajuda</a></li>
+                        <li><a href="#"
+                                class="hover:text-turquoise transition-colors inline-block hover:translate-x-1 duration-200">Política
+                                de privacidade</a></li>
+                        <li><a href="#"
+                                class="hover:text-turquoise transition-colors inline-block hover:translate-x-1 duration-200">Termos
+                                de uso</a></li>
+                        <li><a href="#"
+                                class="hover:text-turquoise transition-colors inline-block hover:translate-x-1 duration-200">Trocas
+                                e garantias</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-400">&copy; 2026 Roma Joias. Todos os direitos reservados.</p>
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-gray-200 rounded animate-pulse"></div> <!-- Placeholder for payment icons -->
+                    <div class="w-8 h-8 bg-gray-200 rounded animate-pulse"></div>
+                    <div class="w-8 h-8 bg-gray-200 rounded animate-pulse"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
